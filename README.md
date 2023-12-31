@@ -1,0 +1,1 @@
+Program that simulates a game of rock, paper or scissors. In this case you play against the computer. The user wins if: rock wins scissors or paper wins rock or scissors wins paper.
