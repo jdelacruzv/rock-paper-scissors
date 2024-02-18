@@ -17,11 +17,14 @@ def title_bar():
 
 
 def leave_sys():
-	leave = input('\n¿Desea continuar? (S / N): ').lower()
-	if leave == 's':
-		game()
-	else:
-		os._exit(0)
+	while True:
+		leave = input('¿Desea continuar? (S / N): ').lower()
+		if leave == 's':
+			game()
+		elif leave == 'n':
+			os._exit(0)
+		else:
+			print('Entrada no válida')
 
 
 # El usuario gana si: 'piedra gana tijera' o 'papel gana piedra' o 'tijera gana papel'
